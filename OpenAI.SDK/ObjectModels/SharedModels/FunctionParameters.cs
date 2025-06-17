@@ -23,7 +23,7 @@ public class PropertyDefinition
     ///     Required. Function parameter object type. Default value is "object".
     /// </summary>
     [JsonPropertyName("type")]
-    public string? Type { get; set; }
+    public string Type { get; set; } = "object"
     
     /// <summary>
     ///     An instance validates successfully against this keyword if its value is equal to the value of the keyword
