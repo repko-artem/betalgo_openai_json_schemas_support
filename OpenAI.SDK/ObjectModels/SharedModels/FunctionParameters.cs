@@ -210,6 +210,19 @@ public class PropertyDefinition
     /// </summary>
     [JsonPropertyName("oneOf")]
     public IList<PropertyDefinition>? OneOf { get; set; }
+    
+    /// <summary>
+    ///     Determines which schema to use based on the value of a specific property in the object.
+    /// </summary>
+    [JsonPropertyName("discriminator")]
+    public Discriminator? Discriminator { get; set; }
+    
+    /// <summary>
+    ///     Optional. The schema URL that describes the schema of this object.
+    ///     I.e. "http://json-schema.org/draft-07/schema#"
+    /// </summary>
+    [JsonPropertyName("$schema")]
+    public string? Schema { get; set; }
 
     public static PropertyDefinition DefineArray(PropertyDefinition? arrayItems = null)
     {
