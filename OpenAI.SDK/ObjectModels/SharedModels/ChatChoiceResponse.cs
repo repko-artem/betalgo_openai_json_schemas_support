@@ -48,10 +48,10 @@ public record ChatChoiceResponse
         public string Token { get; set; }
 
         [JsonPropertyName("logprob")]
-        public double LogProb { get; set; }
+        public double? LogProb { get; set; }
 
         [JsonPropertyName("bytes")]
-        public List<int> Bytes { get; set; }
+        public List<int>? Bytes { get; set; }
     }
 
     public record ContentItem : ContentItemBase

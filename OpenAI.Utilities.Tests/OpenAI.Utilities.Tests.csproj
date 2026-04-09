@@ -25,6 +25,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\OpenAI.Utilities\Betalgo.OpenAI.Utilities.csproj" />
+		<ProjectReference Include="..\OpenAI.SDK\Betalgo.Ranul.OpenAI.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -20,10 +20,10 @@ public record MessageAnnotation
     public string Text { get; set; }
 
     [JsonPropertyName("start_index")]
-    public int StartIndex { get; set; }
+    public int? StartIndex { get; set; }
 
     [JsonPropertyName("end_index")]
-    public int EndIndex { get; set; }
+    public int? EndIndex { get; set; }
 
     [JsonPropertyName("file_citation")]
     public FileCitation FileCitation { get; set; }

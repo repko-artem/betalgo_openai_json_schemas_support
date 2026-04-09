@@ -32,7 +32,7 @@ public record VectorStoreObjectResponse : BaseResponse
     ///     The total number of bytes used by the files in the vector store.
     /// </summary>
     [JsonPropertyName("usage_bytes")]
-    public int UsageBytes { get; set; }
+    public int? UsageBytes { get; set; }
 
     [JsonPropertyName("file_counts")]
     public FileCounts FileCounts { get; set; }
