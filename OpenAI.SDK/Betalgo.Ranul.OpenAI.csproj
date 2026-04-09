@@ -10,14 +10,14 @@
 		<PackageIcon>Betalgo-Ranul-OpenAI-icon.png</PackageIcon>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Title>OpenAI SDK by Betalgo</Title>
-		<Version>9.1.0</Version>
+		<Version>9.1.0.16</Version>
 		<Authors>Tolga Kayhan, Betalgo</Authors>
 		<Company>Betalgo Up Ltd.</Company>
 		<Product>OpenAI .NET library by Betalgo Ranul</Product>
 		<Description>.NET library for the OpenAI services by Betalgo Ranul</Description>
 		<RepositoryUrl>https://github.com/betalgo/openai/</RepositoryUrl>
 		<PackageTags>openAI,realtime,chatGPT,gpt-4, gpt-3,DALL·E,whisper,azureOpenAI,ai,betalgo,NLP,dalle,dall-e,OpenAI,OpenAi,openAi,azure</PackageTags>
-		<PackageId>Betalgo.Ranul.OpenAI</PackageId>
+		<PackageId>Betalgo.Ranul.OpenAI.Fork</PackageId>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<RepositoryUrl>https://github.com/betalgo/openai.git</RepositoryUrl>
