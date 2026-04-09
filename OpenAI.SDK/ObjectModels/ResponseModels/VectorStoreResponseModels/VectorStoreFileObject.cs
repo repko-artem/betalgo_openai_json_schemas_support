@@ -20,7 +20,7 @@ public record VectorStoreFileObject : BaseResponse
     ///     The total vector store usage in bytes. Note that this may be different from the original file size.
     /// </summary>
     [JsonPropertyName("usage_bytes")]
-    public int UsageBytes { get; set; }
+    public int? UsageBytes { get; set; }
 
     /// <summary>
     ///     The Unix timestamp (in seconds) for when the vector store file was created.

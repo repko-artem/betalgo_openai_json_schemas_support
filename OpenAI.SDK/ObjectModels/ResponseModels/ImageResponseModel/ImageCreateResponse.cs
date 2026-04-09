@@ -57,7 +57,7 @@ public record ImageCreateResponse : BaseResponse, IOpenAIModels.ICreatedAt
         /// <param name="inputTokensDetails">
         ///     The input tokens detailed information for the image generation.
         /// </param>
-        public UsageModel(int totalTokens, int inputTokens, int outputTokens, InputTokensDetailsModel inputTokensDetails)
+        public UsageModel(int? totalTokens, int? inputTokens, int? outputTokens, InputTokensDetailsModel? inputTokensDetails)
         {
             TotalTokens = totalTokens;
             InputTokens = inputTokens;
@@ -70,25 +70,25 @@ public record ImageCreateResponse : BaseResponse, IOpenAIModels.ICreatedAt
         ///     The total number of tokens (images and text) used for the image generation.
         /// </summary>
         [JsonPropertyName("total_tokens")]
-        public int TotalTokens { get; set; }
+        public int? TotalTokens { get; set; }
 
         /// <summary>
         ///     The number of tokens (images and text) in the input prompt.
         /// </summary>
         [JsonPropertyName("input_tokens")]
-        public int InputTokens { get; set; }
+        public int? InputTokens { get; set; }
 
         /// <summary>
         ///     The number of image tokens in the output image.
         /// </summary>
         [JsonPropertyName("output_tokens")]
-        public int OutputTokens { get; set; }
+        public int? OutputTokens { get; set; }
 
         /// <summary>
         ///     The input tokens detailed information for the image generation.
         /// </summary>
         [JsonPropertyName("input_tokens_details")]
-        public InputTokensDetailsModel InputTokensDetails { get; set; }
+        public InputTokensDetailsModel? InputTokensDetails { get; set; }
 
 
         /// <summary>
@@ -123,13 +123,13 @@ public record ImageCreateResponse : BaseResponse, IOpenAIModels.ICreatedAt
             ///     The number of text tokens in the input prompt.
             /// </summary>
             [JsonPropertyName("text_tokens")]
-            public int TextTokens { get; set; }
+            public int? TextTokens { get; set; }
 
             /// <summary>
             ///     The number of image tokens in the input prompt.
             /// </summary>
             [JsonPropertyName("image_tokens")]
-            public int ImageTokens { get; set; }
+            public int? ImageTokens { get; set; }
 
 
         }

@@ -14,5 +14,5 @@ public record ExpiresAfter
     ///     The number of days after the anchor time that the vector store will expire.
     /// </summary>
     [JsonPropertyName("days")]
-    public int Days { get; set; }
+    public int? Days { get; set; }
 }

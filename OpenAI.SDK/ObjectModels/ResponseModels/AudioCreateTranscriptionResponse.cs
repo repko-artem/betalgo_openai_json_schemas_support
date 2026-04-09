@@ -28,10 +28,10 @@ public record AudioCreateTranscriptionResponse : BaseResponse
         public string Word { get; set; }
 
         [JsonPropertyName("start")]
-        public float Start { get; set; }
+        public float? Start { get; set; }
 
         [JsonPropertyName("end")]
-        public float End { get; set; }
+        public float? End { get; set; }
     }
 
     public class Segment
@@ -43,30 +43,30 @@ public record AudioCreateTranscriptionResponse : BaseResponse
         public int Seek { get; set; }
 
         [JsonPropertyName("start")]
-        public float Start { get; set; }
+        public float? Start { get; set; }
 
         [JsonPropertyName("end")]
-        public float End { get; set; }
+        public float? End { get; set; }
 
         [JsonPropertyName("text")]
         public string Text { get; set; }
 
         [JsonPropertyName("tokens")]
-        public List<int> Tokens { get; set; }
+        public List<int>? Tokens { get; set; }
 
         [JsonPropertyName("temperature")]
-        public float Temperature { get; set; }
+        public float? Temperature { get; set; }
 
         [JsonPropertyName("avg_logprob")]
-        public float Avglogprob { get; set; }
+        public float? Avglogprob { get; set; }
 
         [JsonPropertyName("compression_ratio")]
-        public float CompressionRatio { get; set; }
+        public float? CompressionRatio { get; set; }
 
         [JsonPropertyName("no_speech_prob")]
-        public float Nospeechprob { get; set; }
+        public float? Nospeechprob { get; set; }
 
         [JsonPropertyName("transient")]
-        public bool Transient { get; set; }
+        public bool? Transient { get; set; }
     }
 }
